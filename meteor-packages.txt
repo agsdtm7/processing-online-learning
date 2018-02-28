@@ -1,0 +1,5 @@
+meteor packages to install:
+
+twitter Bootstrap  --> meteor add twbs:bootstrap
+meteor add bgrayburn:processingjs
+meteor add alanning:roles

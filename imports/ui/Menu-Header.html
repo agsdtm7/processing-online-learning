@@ -1,0 +1,44 @@
+<template name="MenuHeader">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top first-nav" role="navigation">
+        <div class="container">
+            <!-- HAMBURGER MENU  lynda: Bootstrap Layouts Single-Page-Design -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse"><span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">Pw<span class="letter-brand">P</span></a>
+
+            </div>
+            <div class = "collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li class="dropdown">
+                      <a href="/videos" data-toggle="dropdown">Videos</a>
+                        <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="/videos/intro">Intro</a></li>
+                          {{#if onVariable}}<li><a tabindex="-1" href="/videos/variable">Variable</a></li>{{/if}}
+                          {{#if onCondition}}<li><a tabindex="-1" href="/videos/condition">Condition</a></li>{{/if}}
+                          {{#if onLoop}}<li><a tabindex="-1" href="/videos/loop">Loop</a></li>{{/if}}
+                          {{#if onFunction}}<li><a tabindex="-1" href="/videos/function">Function</a></li>{{/if}}
+                          {{#if onClass}}<li><a tabindex="-1" href="/videos/class_and_object">Class and Object</a></li>{{/if}}
+                          {{#if onProject}}<li><a tabindex="-1" href="/videos/project">Project</a></li>{{/if}}
+                        </ul>
+                    </li>
+                   {{#if isInRole 'admin'}}
+                    <li><a href="/admin_page" >Admin Menu</a></li>
+                    {{/if}}
+                    {{#if myRole}}
+                          <li><a href="/admin_page" >Admin Menu</a></li>
+                    {{/if}}
+                        <li><a> {{> loginButtons align="right"}}</a></li>
+                    </ul>
+            </div>
+        </div><!--/ navigation bar attached on top -->
+    </nav>
+</header>
+</template>
