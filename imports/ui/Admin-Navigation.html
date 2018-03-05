@@ -1,42 +1,134 @@
-<!-- CONTENT ADMIN IN THE FILE -->
-<!-- This is Admin Navbar -->
-<template name="adminNavbar">
-<!--
-    <nav class="second-nav navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="topic-nav navbar-header">
-                <button type="button" class="topic-nav navbar-toggle collapsed" style="margin-top:35px;" data-toggle="collapse" data-target="#topic-collapse"><span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                {{#if isAdmin}}
-                <h5 class="navbar-brand topic" style="padding-top:30px;"><strong>WELCOME BACK ADMIN</strong></h5>
-                {{else}}
-                <h5 class="navbar-brand topic" style="padding-top:30px;"><strong>Topics</strong></h5>
-                {{/if}}
-            </div>
+<!-- start of admin content /-->
+<template name="contentAdmin">
+<style>
+  .tab{
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 
-                <div class = "collapse navbar-collapse" id="topic-collapse">
-                    <ul class="weeks nav navbar-nav">
-                        <li><a>Intro</a></li>
+    height: 80%;
+  }
+  /* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
 
-                        <li>{{#if onVariable}}
-                        <a>Variable</a>{{/if}}</li>
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #acacac;
+}
 
-                        <li>{{#if onCondition}}<a>Condition</a>{{/if}}</li>
-
-                        <li>{{#if onLoop}}<a>Loop</a>{{/if}}</li>
-                        <li>{{#if onFunction}}<a>Function</a>{{/if}}</li>
-                        <li>{{#if onClass}}<a>Class and Object</a>{{/if}}</li>
-                        <li>{{#if onProject}}<a>Project</a>{{/if}}</li>
-                    </ul>
-                </div>
-
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #acacac;
+}
+</style>
+<div class="mycontainer content-admin">
+    <div class="admin-menu">
+        <div class="left-sidebar-menu left--admin tab">
+            <h3 class="admin-message">Menu</h3>
+            <button id="defaultOpen" class="tablinks" onclick = "openTab(event, 'topicMenu')">Manage Topics</button>
+            {{#if isInRole 'admin'}}  <button class="tablinks" onclick = "openTab(event,'userDatabase')">Database</button> {{/if}}
         </div>
-    </nav>  -->
-    <div class="custom-line">.</div>
-    {{ > contentAdmin }}
+
+        <div class="right-sidebar-menu right--admin">
+            {{#if isInRole 'admin'}}
+              <div id="userDatabase" class="tabcontent">
+                <div class="admin-message">
+                    <h3>User Database</h3>
+                </div>
+                    <div class = "user-database">
+                 <!--   {{#if currentUser}} -->
+                    <!-- CODEMENTOR.IO/METEOR/TUTORIAL/-->
+                    {{> usernames}}
+                <!--    {{/if}} -->
+                    </div>
+                </div>
+                {{/if}}
+            <div id="topicMenu" class="tabcontent">
+                <div class="admin-message">
+                    <h3>Enable/Disable Topics</h3>
+                </div>
+                    <div class = "topic-buttons">
+                      <button id="varbtn"><h4>Variable</h4></button>
+                      <button id="conbtn"><h4>Condition</h4></button>
+                      <button id="loopbtn"><h4>Loop</h4></button>
+                      <button id="funcbtn"><h4>Function</h4></button>
+                      <button id="clsbtn"><h4>Class and Object</h4></button>
+                      <button id="prjbtn"><h4>Project</h4></button>
+                    </div>
+                    <div class="admin-notes">
+                      <h5>- Note -</h5>
+                      <p>Green button meaning users can view videos in the particular topic</p>
+                      <p>Red button meaning users cannot view videos in the particular topic</p>
+                      <p>Click the button to change from red to green and vice versa</p>
+                      <h5>- Proceed with caution! -</h5>
+                    </div>
+             </div>
+          </div>
+    </div>
+
+</div>
+
+<script>
+    function openTab(evt, tabName){
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for(i=0; i<tabcontent.length;i++){
+            tabcontent[i].style.display = "none";
+            tabcontent[i].style.visibility = "hidden";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for(i=0; i <tablinks.length; i++){
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        document.getElementById(tabName).style.visibility = "visible";
+
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
 </template>
 
-<!-- end of admin navbar /-->
+<template name="usernames">
+    <div class="boxed-view" id="usernamelist">
+
+    {{#each usernames}}
+        <div class="user-database boxed-view">
+
+<!--        <span><strong>{{user}}:</strong></span>  -->
+          <p><span>Username:<strong> {{username}}</strong></span></p>
+          <p>Role:<span id="user{{_id}}"> {{Role}} </span></p>
+
+          {{#each emails}}
+          <p><span>Email Account:<strong> {{ address }}</strong></span></p>
+          {{/each}}
+          <div>
+            {{#if onRole (_id) }}
+              <button class="memberbtn" id="setRole">Set the role as lecturer</button>
+          <!--    <input type="checkbox" id="role{{_id}}" value={{Role}}>  -->
+            {{else}}
+              <button class="memberbtn" id="revokeRole">Revoke the role as lecturer</button>
+            {{/if}}
+            <button class="memberbtn" id="deleteUser">delete</button>
+      <!--      <label for="setRole">Set the role as lecturer?</label> -->
+          </div>
+        </div>
+    {{/each}}
+
+
+    </div>
+</template>
+
+<!-- end of admin content /-->

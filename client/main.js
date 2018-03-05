@@ -78,38 +78,15 @@ Router.route('/about', function (params) {
   this.render('Footer',{
      to:"appFooter"
   });
-//  this.render('pfsmFooter',{
-//     to:"appFooter"
-//  });
+
 });
 
-
-// DOCUMENTATION -- main.html 480
-
-// ANNOUNCEMENT CONTENT
-//Router.route('/announcement', function () {
-//  this.render('MenuHeader',{
-//      to:"appHeader"
-//  });
-//  this.render('adminNavbar',{
-//      to:"appContent"
-//  });
-//
-//  this.render('contentAnnouncement',{
-//      to:"appVideos"
-//  });
-//  this.render('pfsmFooter',{
-//     to:"appFooter"
-//  });
-//});
-
-// DOCUMENTATION -- main.html 480
 
 Router.route('/admin_page', function () {
   this.render('MenuHeader',{
       to:"appHeader"
   });
-  this.render('adminNavbar',{
+  this.render('contentAdmin',{
       to:"appContent"
   });
 
@@ -178,7 +155,7 @@ Router.route('/videos/variable', function () {
   this.render('Footer',{
      to:"appFooter"
   });
-  
+
 });
 
 Router.route('/videos/variable/:videoId', function () {

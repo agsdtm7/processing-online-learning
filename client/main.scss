@@ -50,59 +50,7 @@ li a#login-name-link.login-link-text, li a#login-sign-in-link.login-link-text{
 }
 
 
-/* ADMIN SECTION */
-.admin-message{
-  color:black;
-  text-align: center;
-}
-.admin-menu{
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-}
-.admin-notes{
-  color:black;
-  margin-top: 5rem;
-  text-align:center;
 
-}
-.left--admin{
-  display: flex;
-  flex-direction: row;
-
-}
-.right--admin{
-  margin-top: 2rem;
-  height:75vh;
-}
-.tablinks{
-  align-items: center;
-  width: 50%;
-}
-.topic-buttons{
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  margin: 2rem;
-}
-
-.memberbtn{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-radius: 10px;
-}
-
-.user-database{
-  background-color: white;
-  text-align: center;
-}
-
-
-/* ADMIN SECTION END */
-.left--admin h3.admin-message {
-  display: none;
-}
 @media only screen
 and (min-width: 577px){
   .intrinsic-container iframe{
