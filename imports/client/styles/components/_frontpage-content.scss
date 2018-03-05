@@ -1,0 +1,73 @@
+// title
+.title-subtitle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem !important;
+}
+
+// Brand
+
+.navbar-header a.navbar-brand{
+  text-decoration: none !important;
+  font-family:Hiragino Kaku Gothic ProN;
+  font-weight: bold;
+  color:#bfbfbf;
+  font-size: 4.5rem;
+}
+.navbar-header a.navbar-brand:hover{
+  text-decoration: none;
+  font-family:Hiragino Kaku Gothic ProN;
+  font-weight: bold;
+  color:#bfbfbf;
+  font-size: 4.5rem;
+}
+
+.navbar-header a.navbar-brand:visited{
+  text-decoration: none;
+  font-family:Hiragino Kaku Gothic ProN;
+  font-weight: bold;
+  color:#bfbfbf;
+  font-size: 4.5rem;
+}
+
+.letter-brand{
+  color:$brand-processing-color;
+}
+.mycontainer{
+  height:90vh;
+}
+
+
+.main-title{
+  padding-top: 10rem;
+  color:white;
+}
+
+#processingTitle{
+  color:$brand-processing-color;
+}
+
+.home-banner{
+  height:50vh;
+  background-image: url("mainbg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* FOR THE ARROW DOWN */
+.see-sample{
+  visibility: hidden;
+}
+a#showSample{
+  text-decoration: none !important;
+}
+a#showSample:hover{
+  text-decoration: none !important;
+}
+
+a#showSample h2.text-center.slide-down-page{
+  text-decoration: none !important;
+  color:white;
+}
+a#showSample h2.text-center.slide-down-page:hover{
+  text-decoration: none !important;
+  color:white;
+}

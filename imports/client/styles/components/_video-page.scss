@@ -1,0 +1,62 @@
+/* VIDEO SECTION */
+
+.top-margin{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 50px;
+}
+
+.left-sidebar-menu{
+  background-color: white;
+}
+.title-topic{
+  //background-color: $video-header-footer-color;
+  background-color: gray;
+  color:white;
+  font-weight: bold;
+  margin: auto;
+  padding-top:0.5rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+div.sub-topic{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  text-align: center;
+}
+
+.video-links:hover{
+  background-color: white;
+}
+
+.video-links.list-boxed-view.selected{
+  background-color: white;
+}
+
+a.video-links{
+  background-color:$video-links-bg-color;
+  color:grey;
+  margin:auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.right-sidebar-menu{
+  background-color: $video-header-footer-color;
+}
+
+.selected-video{
+  color:black;
+  font-size: 1.7rem;
+  margin:0 auto;
+  text-align: center;
+}
+
+.intrinsic-container iframe{
+  width: 100%;
+  height: 50vh;
+}

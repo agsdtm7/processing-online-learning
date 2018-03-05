@@ -1,0 +1,241 @@
+@import './../imports/client/styles/main';
+
+
+
+
+/* BODY */
+body{
+
+}
+
+.active{
+  background-color: #e1e1e1 !important; /* MUST PUT THIS IMPORTANT RULE TO GET THE CHANGE REFLECTED IMMEDIATELY*/
+}
+
+
+
+
+
+
+li a#login-name-link.login-link-text, li a#login-sign-in-link.login-link-text{
+  all:none;
+  /*
+  margin: 0;
+  padding: 0;
+  background-color: #f2605e;
+  color:white;
+  */
+}
+
+
+
+/* end of sign-in form */
+
+/* FOR THE ARROW DOWN ------ END ------ */
+.content-about{
+  margin-bottom: 5rem;
+}
+
+.about-description{
+
+}
+
+.content-admin{
+  height:90vh;
+  margin-bottom: 5rem;
+}
+
+.second-nav{
+  visibility: hidden;
+}
+
+
+/* ADMIN SECTION */
+.admin-message{
+  color:black;
+  text-align: center;
+}
+.admin-menu{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.admin-notes{
+  color:black;
+  margin-top: 5rem;
+  text-align:center;
+
+}
+.left--admin{
+  display: flex;
+  flex-direction: row;
+
+}
+.right--admin{
+  margin-top: 2rem;
+  height:75vh;
+}
+.tablinks{
+  align-items: center;
+  width: 50%;
+}
+.topic-buttons{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 2rem;
+}
+
+.memberbtn{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 10px;
+}
+
+.user-database{
+  background-color: white;
+  text-align: center;
+}
+
+
+/* ADMIN SECTION END */
+.left--admin h3.admin-message {
+  display: none;
+}
+@media only screen
+and (min-width: 577px){
+  .intrinsic-container iframe{
+    width: 100%;
+    height: 65vh;
+  }
+  .layout-footer{
+    position: sticky;
+  }
+  .content-about{
+    height:93vh;
+
+  }
+}
+
+@media only screen
+and (min-width: 768px){
+  .content-about{
+    height:97vh;
+    padding-bottom: 5rem;
+  }
+  .top-margin{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+  .left-sidebar-menu{
+    width: 25%;
+  }
+  .title-topic{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .right-sidebar-menu{
+    width: 75%;
+  }
+  .intrinsic-container iframe{
+    width: 100%;
+    height: 65vh;
+  }
+  .layout-footer{
+    position: sticky;
+  }
+
+  /* ADMIN SECTION */
+  .admin-menu{
+    background-color: white;
+    flex-direction: row;
+  }
+  .left--admin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+  }
+  .left--admin h3.admin-message{
+      display: block;
+      visibility: visible;
+      background-color: $left-admin-tab-head-color;
+  }
+  .left--admin.tab{
+    padding:0;
+    margin-top:1.9rem;
+    background-color: $left-admin-tab-head-color;
+  }
+  .left--admin.tab button{
+    background-color:  #f1f1f1;
+  }
+
+}
+@media only screen
+and (min-height: 648px) and (min-width: 990px){
+
+  .see-sample{
+    visibility: visible;
+    color:white;
+    margin-top:35vh;
+  }
+}
+@media only screen
+and (min-height: 740px) and (min-width: 990px){
+  .see-sample{
+    visibility: visible;
+    color:white;
+    margin-top:43vh;
+  }
+  div.container-fluid.sample-section{
+    height:87vh;
+  }
+  .layout-footer{
+    position: sticky;
+  }
+}
+@media only screen
+and (min-width: 991px){
+  .home-banner{
+    height:96vh;
+  }
+
+  .center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:3%;
+  }
+  .content-about{
+    height:93vh;
+
+  }
+  .see-sample{
+    visibility: visible;
+    color:white;
+  }
+  .sample-container{
+    height:84vh;
+  }
+  .layout-footer{
+    position: sticky;
+  }
+}
+@media only screen
+and (min-width: 1200px){
+  .left-sidebar-menu{
+    margin-left: 12.5%;
+    width:15%;
+  }
+  .right-sidebar-menu{
+    width:60%;
+  }
+}
+@media only screen
+and (min-width: 1472px){
+  .intrinsic-container iframe{
+    width: 100%;
+    height: 65vh;
+  }
+}

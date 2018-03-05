@@ -1,0 +1,33 @@
+// Theme color
+$menu-header-bg:white;
+//#00284d;#004280; #bfbfbf; #ff4d4d
+/* alternative colors: #ed0909 <- main red DeepSkyblue #ee6e73 #dfdfdf; */
+
+// list boxed view border color
+$list-boxed-border-color: #004f99;
+// Font color
+$menu-header-font-color:black;
+$menu-header-dropdown-font-color:black;
+
+$video-header-footer-color:#cccccc;
+//#004f99;
+$video-links-bg-color:#e1e6ef;
+// #80bfff;
+/*#ed3838 <- goes well with red theme*/
+
+// Admin area
+$left-admin-tab-head-color:gray;
+
+// Error
+$sign-in-error-color:#ed0909;
+
+// Button color
+$btn-submit-sign-in-form:$menu-header-bg;
+
+// Brand P color
+$brand-processing-color:DeepSkyblue;
+//#0073e6;
+
+// Hover and click on menu
+$menu-hover-color:white;
+/* alternative #ff6666 #cce6ff;<- goes well with red theme */

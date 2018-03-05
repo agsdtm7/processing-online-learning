@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+    height: 95%;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.boxed-view{
+  border: solid 1px #cccccc;
+  padding:0.5rem;
+  
+}
+
+.list-boxed-view{
+/*  border: solid 1px $list-boxed-border-color;*/
+  border: solid 1px white;
+
+}

@@ -11,7 +11,7 @@ function CHECK_VIDEO_VARIABLE_AND_CHANGE_COLOR_BUTTON(){
             if( result == "false"){
                 $("#varbtn").css("background-color","red");
             }else{
-                $("#varbtn").css("background-color","green").css("color","white");
+                $("#varbtn").css("background-color","#00b359").css("color","white");
             }
         }
     });
@@ -26,7 +26,7 @@ function CHECK_VIDEO_CONDITION_AND_CHANGE_COLOR_BUTTON(){
             if( result == "false"){
                 $("#conbtn").css("background-color","red");
             }else{
-                $("#conbtn").css("background-color","green").css("color","white");
+                $("#conbtn").css("background-color","#00b359").css("color","white");
             }
         }
     });
@@ -41,7 +41,7 @@ function CHECK_VIDEO_LOOP_AND_CHANGE_COLOR_BUTTON(){
             if( result == "false"){
                 $("#loopbtn").css("background-color","red");
             }else{
-                $("#loopbtn").css("background-color","green").css("color","white");
+                $("#loopbtn").css("background-color","#00b359").css("color","white");
             }
         }
     });
@@ -56,7 +56,7 @@ function CHECK_VIDEO_FUNCTION_AND_CHANGE_COLOR_BUTTON(){
             if( result == "false"){
                 $("#funcbtn").css("background-color","red");
             }else{
-                $("#funcbtn").css("background-color","green").css("color","white");
+                $("#funcbtn").css("background-color","#00b359").css("color","white");
             }
         }
     });
@@ -71,7 +71,7 @@ function CHECK_VIDEO_CLASSOBJECT_AND_CHANGE_COLOR_BUTTON(){
             if( result == "false"){
                 $("#clsbtn").css("background-color","red");
             }else{
-                $("#clsbtn").css("background-color","green").css("color","white");
+                $("#clsbtn").css("background-color","#00b359").css("color","white");
             }
         }
     });
@@ -86,7 +86,7 @@ function CHECK_VIDEO_PROJECT_AND_CHANGE_COLOR_BUTTON(){
             if( result == "false"){
                 $("#prjbtn").css("background-color","red");
             }else{
-                $("#prjbtn").css("background-color","green").css("color","white");
+                $("#prjbtn").css("background-color","#00b359").css("color","white");
             }
         }
     });

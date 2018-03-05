@@ -5,18 +5,18 @@
     <div class="mycontainer">
     <div class="top-margin">
         <!-- This is the LEFT sidebar menu for SUB TOPICS-->
-        <div class="left-sidebar-menu boxed-view">
+        <div class="left-sidebar-menu list-boxed-view">
             <h4 class="title-topic">- Intro -</h4>
             <div class="sub-topic">
                 {{#each subTopics}}
                 <!-- This line is used to put  -->
-                <a href="/videos/intro/{{subTitle}}" class = "video-links boxed-view">{{link}}</a>
+                <a href="/videos/intro/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
                 {{/each}}
             </div>
         </div>
         <!-- This is the RIGHT sidebar menu for IFRAME YOUTUBE VIDEOS-->
         <div class="right-sidebar-menu">
-            <div class="boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
+            <div class="list-boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
             <div class="intrinsic-container">
                 <p>
                     <iframe src="https://www.youtube.com/embed/{{tutorial_id}}" scrolling="no" frameborder="0" allowfullscreen></iframe>
@@ -35,17 +35,17 @@
     <div class="mycontainer">
     <div class="top-margin">
         <!-- This is the LEFT sidebar menu for SUB TOPICS-->
-        <div class="left-sidebar-menu boxed-view">
+        <div class="left-sidebar-menu list-boxed-view">
             <h4 class="title-topic">- Variable -</h4>
             <div class="sub-topic">
                 {{#each subTopics}}
-                <a href="/videos/variable/{{subTitle}}" class = "video-links boxed-view">{{link}}</a>
+                <a href="/videos/variable/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
                 {{/each}}
             </div>
         </div>
         <!-- This is the RIGHT sidebar menu for IFRAME YOUTUBE VIDEOS-->
         <div class="right-sidebar-menu">
-          <div class="boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
+          <div class="list-boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
             <div class="intrinsic-container">
                 <p align="center">
                     <iframe src="https://www.youtube.com/embed/{{tutorial_id}}" frameborder="0" allowfullscreen></iframe>
@@ -65,17 +65,17 @@
     <div class="mycontainer">
     <div class="top-margin">
         <!-- This is the LEFT sidebar menu for SUB TOPICS-->
-        <div class="left-sidebar-menu boxed-view">
+        <div class="left-sidebar-menu list-boxed-view">
             <h4 class="title-topic">- Condition -</h4>
             <div class="sub-topic">
                 {{#each subTopics}}
-                <a href="/videos/condition/{{subTitle}}" class = "video-links boxed-view">{{link}}</a>
+                <a href="/videos/condition/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
                 {{/each}}
             </div>
         </div>
         <!-- This is the RIGHT sidebar menu for IFRAME YOUTUBE VIDEOS-->
         <div class="right-sidebar-menu">
-          <div class="boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
+          <div class="list-boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
             <div class="intrinsic-container">
                 <p align="center">
                     <iframe src="https://www.youtube.com/embed/{{tutorial_id}}" frameborder="0" allowfullscreen></iframe>
@@ -94,17 +94,17 @@
     <div class="mycontainer">
     <div class="top-margin">
         <!-- This is the LEFT sidebar menu for SUB TOPICS-->
-        <div class="left-sidebar-menu boxed-view">
+        <div class="left-sidebar-menu list-boxed-view">
             <h4 class="title-topic">- Loop -</h4>
             <div class="sub-topic">
                 {{#each subTopics}}
-                <a href="/videos/loop/{{subTitle}}" class = "video-links boxed-view">{{link}}</a>
+                <a href="/videos/loop/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
                 {{/each}}
             </div>
         </div>
         <!-- This is the RIGHT sidebar menu for IFRAME YOUTUBE VIDEOS-->
         <div class="right-sidebar-menu">
-          <div class="boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
+          <div class="list-boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
             <div class="intrinsic-container">
                 <p align="center">
                     <iframe src="https://www.youtube.com/embed/{{tutorial_id}}" frameborder="0" allowfullscreen></iframe>
@@ -124,17 +124,17 @@
     <div class="mycontainer">
     <div class="top-margin">
         <!-- This is the LEFT sidebar menu for SUB TOPICS-->
-        <div class="left-sidebar-menu boxed-view">
+        <div class="left-sidebar-menu list-boxed-view">
             <h4 class="title-topic">- Function -</h4>
             <div class="sub-topic">
                 {{#each subTopics}}
-                <a href="/videos/function/{{subTitle}}" class = "video-links">{{link}}</a>
+                <a href="/videos/function/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
                 {{/each}}
             </div>
         </div>
         <!-- This is the RIGHT sidebar menu for IFRAME YOUTUBE VIDEOS-->
         <div class="right-sidebar-menu">
-          <div class="boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
+          <div class="list-boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
             <div class="intrinsic-container">
                 <p align="center">
                     <iframe src="https://www.youtube.com/embed/{{tutorial_id}}" frameborder="0" allowfullscreen></iframe>
@@ -150,21 +150,21 @@
 <template name="classContent">
   {{ > secondNavbar }}
   <!-- content class videos -->
-    {{#if currentUser}}
+    
     <div class="mycontainer">
     <div class="top-margin">
         <!-- This is the LEFT sidebar menu for SUB TOPICS-->
-        <div class="left-sidebar-menu boxed-view">
+        <div class="left-sidebar-menu list-boxed-view">
             <h4 class="title-topic">- Class and Object -</h4>
             <div class="sub-topic">
                 {{#each subTopics}}
-                <a href="/videos/class_and_object/{{subTitle}}" class = "video-links">{{link}}</a>
+                <a href="/videos/class_and_object/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
                 {{/each}}
             </div>
         </div>
         <!-- This is the RIGHT sidebar menu for IFRAME YOUTUBE VIDEOS-->
         <div class="right-sidebar-menu">
-          <div class="boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
+          <div class="list-boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
             <div class="intrinsic-container">
                 <p align="center">
                     <iframe src="https://www.youtube.com/embed/{{tutorial_id}}" frameborder="0" allowfullscreen></iframe>
@@ -173,33 +173,27 @@
         </div>
     </div>
     </div>
-    {{else}}
-    <div class= "container">
-        <h2 style="color:black; margin-top:200px;">Please login in order to be able to view the content of this topic.</h2>
-    </div>
-    {{/if}}
 </template>
 
 <!-- CONTENT VIDEOS FOR THE TOPIC 'PROJECT' -->
 <template name="projectContent">
   {{ > secondNavbar }}
   <!-- content project videos -->
-    {{#if currentUser}}
     <div class="mycontainer">
     <div class="top-margin">
         <!-- This is the LEFT sidebar menu for SUB TOPICS-->
-        <div class="left-sidebar-menu boxed-view">
+        <div class="left-sidebar-menu list-boxed-view">
             <h4 class="title-topic">- Project -</h4>
             <div class="sub-topic">
                 {{#each subTopics}}
                 <!-- This line is used to put  -->
-                <a href="/videos/project/{{subTitle}}" class = "video-links boxed-view">{{link}}</a>
+                <a href="/videos/project/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
                 {{/each}}
             </div>
         </div>
         <!-- This is the RIGHT sidebar menu for IFRAME YOUTUBE VIDEOS-->
         <div class="right-sidebar-menu">
-          <div class="boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
+          <div class="list-boxed-view selected-video"><h4>{{tutorial_title}}</h4></div>
             <div class="intrinsic-container">
                 <p align="center">
                     <iframe src="https://www.youtube.com/embed/{{tutorial_id}}" frameborder="0" allowfullscreen></iframe>
@@ -208,9 +202,4 @@
         </div>
     </div>
     </div>
-    {{else}}
-    <div class= "container">
-        <h2 style="color:black; margin-top:200px;">Please login in order to be able to view the content of this topic.</h2>
-    </div>
-    {{/if}}
 </template>

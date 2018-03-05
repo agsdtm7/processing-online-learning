@@ -33,7 +33,7 @@
 }
 </style>
 <div class="mycontainer content-admin">
-    <div class="admin-menu boxed-view">
+    <div class="admin-menu">
         <div class="left-sidebar-menu left--admin tab">
             <h3 class="admin-message">Menu</h3>
             <button id="defaultOpen" class="tablinks" onclick = "openTab(event, 'topicMenu')">Manage Topics</button>
@@ -43,7 +43,9 @@
         <div class="right-sidebar-menu right--admin">
             {{#if isInRole 'admin'}}
               <div id="userDatabase" class="tabcontent">
-                <h3 class="admin-message">User Database</h3>
+                <div class="admin-message" style="padding:0.01rem; background-color:gray;">
+                    <h3>User Database</h3>
+                </div>
                     <div class = "user-database">
                  <!--   {{#if currentUser}} -->
                     <!-- CODEMENTOR.IO/METEOR/TUTORIAL/-->
@@ -53,7 +55,9 @@
                 </div>
                 {{/if}}
             <div id="topicMenu" class="tabcontent">
-                <h3 class="admin-message">Enable/Disable Topics</h3>
+                <div class="admin-message" style="padding:0.01rem; background-color:gray;">
+                    <h3>Enable/Disable Topics</h3>
+                </div>
                     <div class = "topic-buttons">
                       <button id="varbtn"><h4>Variable</h4></button>
                       <button id="conbtn"><h4>Condition</h4></button>
@@ -99,7 +103,7 @@
 
 <template name="usernames">
     <div class="boxed-view" id="usernamelist">
-  
+
     {{#each usernames}}
         <div class="user-database boxed-view">
 

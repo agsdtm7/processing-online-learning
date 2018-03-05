@@ -1,0 +1,32 @@
+/* menu */
+ul.dropdown-menu{
+  background-color:$menu-header-bg;
+}
+.navbar-header, .first-nav{
+  background-color: $menu-header-bg;
+}
+
+div#collapse ul li a{
+  color:$menu-header-font-color;
+}
+div#collapse ul li ul li a:hover{
+  background-color: $menu-hover-color;
+}
+
+
+/* dropdown sign-in/sign-up form */
+.accounts-dialog{
+  background-color: white;
+}
+
+#login-dropdown-list a.login-close-text,label#login-username-or-email-label, label#login-password-label, label#login-username-label, label#login-email-label{
+  color:$menu-header-dropdown-font-color;
+}
+
+div.message.error-message{
+  color:$sign-in-error-color;
+}
+
+button#login-buttons-password.login-button.login-button-form-submit{
+  background-color:$btn-submit-sign-in-form;
+}
