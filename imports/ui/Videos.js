@@ -4,7 +4,7 @@ import { Session } from 'meteor/session';
 //------ Template.nameTemplate.onRendered, my css click would be in effect on the second click
 // this function is to inject css class into the link of sub topics that user clicks
 function onClickHandler(){
-//  console.log('hellow');
+
 var selector = '.video-links';
 $(selector).on('click', function(){
 $(selector).removeClass('selected');

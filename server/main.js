@@ -34,13 +34,6 @@ Meteor.methods({
    if(!this.userId){
      throw new Meteor.Error('not-authorized');
    }
-   // SimpleSchema to validate _id string with length greater than 1
-     // new SimpleSchema({
-     //   _id:{
-     //     type: String,
-     //     min: 1
-     //   }
-     // }).validate({ selectedId });
 
    Meteor.users.remove({ _id: selectedId}, function(error, result){
      if(error){
