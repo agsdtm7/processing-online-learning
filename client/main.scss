@@ -8,31 +8,32 @@ body{
 
 }
 
-.hideMe{
-  -moz-animation: cssAnimation 0s ease-in 5s forwards;
-   /* Firefox */
-   -webkit-animation: cssAnimation 0s ease-in 5s forwards;
-   /* Safari and Chrome */
-   -o-animation: cssAnimation 0s ease-in 5s forwards;
-   /* Opera */
-   animation: cssAnimation 0s ease-in 5s forwards;
-   -webkit-animation-fill-mode: forwards;
-   animation-fill-mode: forwards;
-}
-@keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-    }
-}
+// .hideMe{
+//   -moz-animation: cssAnimation 0s ease-in 3s forwards;
+//    /* Firefox */
+//    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+//    /* Safari and Chrome */
+//    -o-animation: cssAnimation 0s ease-in 3s forwards;
+//    /* Opera */
+//    animation: cssAnimation 0s ease-in 3s forwards;
+//    -webkit-animation-fill-mode: forwards;
+//    animation-fill-mode: forwards;
+// }
+// @keyframes cssAnimation {
+//     to {
+//         transition: max-height;
+//         width:0;
+//         height:0;
+//         overflow:hidden;
+//     }
+// }
+// @-webkit-keyframes cssAnimation {
+//     to {
+//         width:0;
+//         height:0;
+//         visibility:hidden;
+//     }
+// }
 
 .active{
    background-color: #e1e1e1 !important; /* MUST PUT THIS IMPORTANT RULE TO GET THE CHANGE REFLECTED IMMEDIATELY*/
@@ -75,6 +76,19 @@ and (min-width: 577px){
 
 @media only screen
 and (min-width: 768px){
+  // .hideMe{
+  //   width:0;
+  //   height:0;
+  //   display: none;
+  //   visibility:hidden;
+  //
+  //   //https://stackoverflow.com/questions/23317108/turn-animation-off-using-media-query
+  //   -webkit-transition: none !important;
+  //  -moz-transition: none !important;
+  //  -o-transition: none !important;
+  //  -ms-transition: none !important;
+  //  transition: none !important;
+  // }
   .content-about{
     height:97vh;
     padding-bottom: 5rem;
