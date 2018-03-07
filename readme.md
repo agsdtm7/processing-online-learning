@@ -1,4 +1,4 @@
-Processing Online Learning ~ Programming with Processing
+# Programming with Processing
 
 This is a responsive (mobile first) web app built on Meteor - Blaze
 
