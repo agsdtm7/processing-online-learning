@@ -110,7 +110,10 @@ and (min-width: 577px){
   }
   .content-about{
     height:93vh;
-
+  }
+  .left-sidebar-menu{
+    height:15vh;
+    overflow-y: scroll;
   }
 }
 
@@ -140,6 +143,7 @@ and (min-width: 768px){
   }
   .left-sidebar-menu{
     width: 25%;
+    height: auto;
   }
   .title-topic{
     padding-top: 1rem;

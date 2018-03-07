@@ -2,7 +2,10 @@
   padding:0.01rem;
   background-color:white;
 }
-
+#userDatabase,#topicMenu{
+  height: 75vh;
+  overflow-y: scroll;
+}
 /* ADMIN SECTION --- note: the admin message background color is in the main.scss  */
 .admin-message{
   color:black;
@@ -55,6 +58,7 @@
 .user-database{
   background-color: white;
   text-align: center;
+  overflow-y:scroll;
 }
 
 .left--admin h3.admin-message {
