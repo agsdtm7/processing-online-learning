@@ -13,6 +13,10 @@ div#collapse ul li ul li a:hover{
   background-color: $menu-hover-color;
 }
 
+div#collapse.navbar-collapse.collapse.in{
+  text-align: right;
+  height: 40vh;
+}
 
 /* dropdown sign-in/sign-up form */
 .accounts-dialog{
