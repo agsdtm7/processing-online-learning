@@ -12,6 +12,9 @@
                 {{#each subTopics}}
                 <!-- This line is used to put  -->
                 <a href="/videos/intro/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
+                  {{#if loggedIn}}
+                  <a href="/viewcode/intro/{{viewCode}}" target="_blank" download="{{viewCode}}">download code</a>
+                  {{/if }}
                 {{/each}}
             </div>
         </div>
@@ -41,6 +44,9 @@
             <div class="sub-topic">
                 {{#each subTopics}}
                 <a href="/videos/variable/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
+                  {{#if loggedIn}}
+                    <a href="/viewcode/variable/{{viewCode}}" target="_blank" download="{{viewCode}}">download code</a>
+                  {{/if }}
                 {{/each}}
             </div>
         </div>
@@ -71,6 +77,9 @@
             <div class="sub-topic">
                 {{#each subTopics}}
                 <a href="/videos/condition/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
+                {{#if loggedIn}}
+                  <a href="/viewcode/condition/{{viewCode}}" target="_blank" download="{{viewCode}}">download code</a>
+                {{/if }}
                 {{/each}}
             </div>
         </div>
@@ -100,6 +109,9 @@
             <div class="sub-topic">
                 {{#each subTopics}}
                 <a href="/videos/loop/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
+                {{#if loggedIn}}
+                  <a href="/viewcode/loop/{{viewCode}}" target="_blank" download="{{viewCode}}">download code</a>
+                {{/if }}
                 {{/each}}
             </div>
         </div>
@@ -130,6 +142,9 @@
             <div class="sub-topic">
                 {{#each subTopics}}
                 <a href="/videos/function/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
+                {{#if loggedIn}}
+                  <a href="/viewcode/function/{{viewCode}}" target="_blank" download="{{viewCode}}">download code</a>
+                {{/if }}
                 {{/each}}
             </div>
         </div>
@@ -160,6 +175,9 @@
             <div class="sub-topic">
                 {{#each subTopics}}
                 <a href="/videos/class_and_object/{{subTitle}}" class = "video-links list-boxed-view">{{link}}</a>
+                {{#if loggedIn}}
+                  <a href="/viewcode/class_and_object/{{viewCode}}" target="_blank" download="{{viewCode}}">download code</a>
+                {{/if }}
                 {{/each}}
             </div>
         </div>

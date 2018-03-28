@@ -198,7 +198,7 @@ and (min-height: 740px) and (min-width: 990px){
   .see-sample{
     visibility: visible;
     color:white;
-    margin-top:43vh;
+    margin-top:55vh;
   }
   div.container-fluid.sample-section{
     height:87vh;
@@ -241,6 +241,9 @@ and (min-width: 1200px){
   }
   .right-sidebar-menu{
     width:60%;
+  }
+  .see-sample{
+    margin-top: 49vh;
   }
 }
 @media only screen

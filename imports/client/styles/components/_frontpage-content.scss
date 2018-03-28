@@ -48,9 +48,10 @@
 
 .home-banner{
   height:50vh;
-  background-image: url("mainbg2.png");
+  background-image: url("cover2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 /* FOR THE ARROW DOWN */
 .see-sample{
@@ -63,11 +64,22 @@ a#showSample:hover{
   text-decoration: none !important;
 }
 
-a#showSample h2.text-center.slide-down-page{
+a#showSample h3.text-center.slide-down-page{
   text-decoration: none !important;
-  color:white;
+  color:#eeeeee;
+
 }
-a#showSample h2.text-center.slide-down-page:hover{
+
+h3.text-center.slide-down-page{
+  background-color: rgba(0,0,0, 0.3);
+  padding:1rem 1rem 1rem 1rem;
+  
+  border-radius: 20px;
+  width: 20%;
+  margin-left:40%;
+}
+a#showSample h3.text-center.slide-down-page:hover{
+  background-color: rgba(0,0,0, 0.5);
   text-decoration: none !important;
-  color:white;
+  color:#efefef;
 }

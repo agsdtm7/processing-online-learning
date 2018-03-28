@@ -40,14 +40,17 @@ Template.introContent.helpers({
             link:'Basic Commands',
             videoId:'4XY0syQ5tUs?rel=0',
             subTitle:'basic_commands',
+            viewCode:'basic_commands.pde'
         },{
             link:'Simple Drawing',
             videoId:'VKgXOGz7p2k?rel=0',
             subTitle:'simple_drawing',
+            viewCode:'simple_drawing.pde'
         },{
             link:'Simple Drawing 2',
             videoId: 'AnxXDCIDSqM?rel=0',
             subTitle: 'simple_panorama',
+            viewCode: 'simple_drawing2.pde'
         }]
     },
 });
@@ -109,18 +112,22 @@ Template.variableContent.helpers({
             link: 'Introduction and Usage Pt 1',
             videoId:'QuBV8CLVwkQ?rel=0',
             subTitle:'variable_short_intro',
+            viewCode: 'variable_short_intro.pde'
         },{
             link: 'Variable Usage Pt 2',
             videoId:'pfcTjuOHjlY?rel=0',
-            subTitle:'variable_usage_part2'
+            subTitle:'variable_usage_part2',
+            viewCode: 'variable_usage_part2.pde'
         },{
             link: 'Setup - Draw and Events',
             videoId: 'hH8ltJlzouY?rel=0',
-            subTitle:'setup_draw_and_events'
+            subTitle:'setup_draw_and_events',
+            viewCode: 'setup_draw_and_events.pde'
         },{
             link:'Tips - Rotation',
             videoId: '-adUwF0TXdo?rel=0',
-            subTitle: 'rotation_using_pushMatrix'
+            subTitle: 'rotation_using_pushMatrix',
+            viewCode: 'rotation_using_pushMatrix.pde'
         }]
     }
 });
@@ -177,18 +184,22 @@ Template.conditionContent.helpers({
             link: '"if" condition pt1',
             videoId:'WacqfsNWMmo?rel=0',
             subTitle:'if_condition_pt1',
+            viewCode: 'if_condition_pt1.pde'
         },{
             link: 'tips - rain using random',
             videoId: '7sn_2ylnc3o?rel=0',
             subTitle:'rain_using_random',
+            viewCode:'rain_using_random.pde'
         },{
             link: 'putting rain and cloud together',
             videoId: 'XfWvAxpSUSs?rel=0',
             subTitle:'rain_and_cloud_together',
+            viewCode: 'rain_and_cloud_together.pde'
         },{
             link: 'if condition with boolean variable',
             videoId: 'FpYsjkWfx1Q?rel=0',
             subTitle: 'applying_if_with_boolean_variable',
+            viewCode: 'applying_if_with_boolean_variable.pde'
         }]
     }
 });
@@ -246,18 +257,22 @@ Template.loopContent.helpers({
             link: 'Intro to "while" loop',
             videoId:'ksBsqash83c?rel=0',
             subTitle:'intro_to_while_loop',
+            viewCode:'intro_to_while_loop.pde'
         },{
             link: 'Intro to the "for" loop',
             videoId: 'qCAQPnOhXUM?rel=0',
             subTitle:'intro_to_for_loop',
+            viewCode:'intro_to_for_loop.pde'
         },{
             link: 'Nested while loop',
             videoId: '7v-hWHwDhRA?rel=0',
             subTitle:'nested_while_loop',
+            viewCode:'nested_while_loop.pde'
         },{
             link: 'Nested for loop',
             videoId: 'WSbh8VRAjQ4?rel=0',
             subTitle:'nested_for_loop',
+            viewCode:'nested_for_loop.pde'
         }]
     }
 });
@@ -314,23 +329,28 @@ Template.functionContent.helpers({
         return [{
             link: 'Intro to functions',
             videoId:'Kmf13gsPGfo?rel=0',
-            subTitle:'intro_to_function'
+            subTitle:'intro_to_function',
+            viewCode:'intro_to_function.pde'
         },{
             link: 'Function with Parameters pt1',
             videoId: 'Nyg4wnBnPlI?rel=0',
-            subTitle:'function_with_params_pt1'
+            subTitle:'function_with_params_pt1',
+            viewCode:'function_with_params_pt1.pde'
         },{
-        link: 'Function with Parameters pt2',
+            link: 'Function with Parameters pt2',
             videoId: 'mNNi1RQBofs?rel=0',
-            subTitle:'function_with_params_pt2'
+            subTitle:'function_with_params_pt2',
+            viewCode:'function_with_params_pt2.pde'
         },{
             link: 'Functions that Return Value pt1',
             videoId: 'dI2Mdxg5YAw?rel=0',
-            subTitle:'functions_return_value1'
+            subTitle:'functions_return_value1',
+            viewCode:'functions_return_value1.pde'
         },{
             link: 'Functions that Return Value pt2',
             videoId: '1QcdDSyvijs?rel=0',
-            subTitle:'functions_return_value2'
+            subTitle:'functions_return_value2',
+            viewCode:'functions_return_value2.pde'
         }]
     }
 });
@@ -389,18 +409,22 @@ Template.classContent.helpers({
             link: 'Class and Object Pt 1',
             videoId:'y0UyhG4AsEc?rel=0',
             subTitle:'class_and_object_1',
+            viewCode:'class_and_object_1.pde'
         },{
             link: 'Class and Object Pt 2',
             videoId:'vcVXSDdQVNE?rel=0',
-            subTitle:'class_and_object_2'
+            subTitle:'class_and_object_2',
+            viewCode:'class_and_object_2.pde'
         },{
             link: 'Class and Object Pt 3',
             videoId: 'T5YeIvfz3tg?rel=0',
-            subTitle:'class_and_object_3'
+            subTitle:'class_and_object_3',
+            viewCode: 'class_and_object_3.pde'
         },{
             link:'Class and Object Pt 4',
             videoId: 'ZZy_xh_Gyuw?rel=0',
-            subTitle: 'class_and_object_4'
+            subTitle: 'class_and_object_4',
+            viewCode: 'class_and_object_4.pde'
         }]
     }
 });
