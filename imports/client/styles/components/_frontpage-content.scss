@@ -47,8 +47,8 @@
 }
 
 .home-banner{
-  height:50vh;
-  background-image: url("cover2.png");
+  
+  background-image: url("codingbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,4 +82,9 @@ a#showSample h3.text-center.slide-down-page:hover{
   background-color: rgba(0,0,0, 0.5);
   text-decoration: none !important;
   color:#efefef;
+}
+
+.home-image-section{
+  margin-top:2rem;
+  padding-top:2rem;
 }

@@ -7,7 +7,7 @@ Session.set("userRole", undefined);
 Template.usernames.helpers({
     usernames: function(){
         Meteor.subscribe('userlist');
-        return Meteor.users.find({_id:{$ne:Meteor.userId()}});
+        return Meteor.users.find({_id:{$ne:Meteor.userId()}}); // to show all the id EXCEPT your Id
       }
     }
 );

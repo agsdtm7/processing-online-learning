@@ -1,13 +1,17 @@
 // Theme color
-$menu-header-bg:white;
+$menu-header-bg:rgba(70, 70, 70,1);
 //#00284d;#004280; #bfbfbf; #ff4d4d
 /* alternative colors: #ed0909 <- main red DeepSkyblue #ee6e73 #dfdfdf; */
 
 // list boxed view border color
 $list-boxed-border-color: #004f99;
 // Font color
-$menu-header-font-color:black;
+$menu-header-font-color:white; 
+$menu-footer-font-color:white;
+
 $menu-header-dropdown-font-color:black;
+
+$menu-active-color:deepskyblue;
 
 $video-header-footer-color:#cccccc;
 //#004f99;
@@ -29,5 +33,5 @@ $brand-processing-color:DeepSkyblue;
 //#0073e6;
 
 // Hover and click on menu
-$menu-hover-color:white;
+$menu-hover-color:rgba(0, 191, 255, 0.6);
 /* alternative #ff6666 #cce6ff;<- goes well with red theme */
