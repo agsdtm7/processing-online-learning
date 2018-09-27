@@ -1,377 +1,395 @@
 <template name="FrontpageContent">
-    <div class="container-fluid top-body-home" style="padding-left:0px; padding-right:0px;">
-        <div class = "jumbotron home-banner">
-          <div class = "main-title">
-            <h1 class="text-center">Programming with <span id="processingTitle">P</span>rocessing</h1>
-            <p class="text-center title-subtitle">Learning the basic programming concepts without headache</p>
-          </div>
-          <div id="arrowdown" class="see-sample">
-            <a id="showSample" href="#samples_processing">
-              <h3 class="text-center slide-down-page">Show Samples</h3>
-            </a>
-          </div>
+    <div class="container-fluid top-body-home" style="padding-left:0px; padding-right:0px; margin-top:40px;">
+        <div class="jumbotron home-banner">
+            <div class="main-title">
+                <h1 class="text-center">Programming with <span id="processingTitle">P</span>rocessing</h1>
+                <p class="text-center title-subtitle">Learning the basic programming concepts without headache</p>
+            </div>
+            <div id="arrowdown" class="see-sample">
+                <a id="showSample" href="#samples_processing">
+                    <h3 class="text-center slide-down-page">Show Samples</h3>
+                </a>
+            </div>
         </div>
     </div>
     <!-- End of Div   -->
     <!-- Start of Div   -->
-        <div class="container-fluid sample-section">
-            <div class="container sample-container">
-            <div class="row home-image-section" >
+    <div class="container-fluid sample-section" style="background-color: white;">
+        <div class="container sample-container" style="height: 100%;">
+            <div class="row home-image-section">
                 <h2 class="text-center" data-spy="scroll" data-target="#arrowdown" data-offset="0">Sample Programs</h2>
-                <div class = "col-md-4 home-image">
+                <div class="col-md-4 home-image">
 
                     <div class="sample-explanation">
-                        <h4 class="text-center" data-toggle="collapse" data-target="#sample1"><a class="sample-link" href="javascript: void(0)" >Fill It with Circles</a></h4>
+                        <h4 class="text-center" data-toggle="collapse" data-target="#sample1"><a class="sample-link"
+                                href="javascript: void(0)">Fill
+                                It with Circles</a></h4>
 
                         {{> processingSketch1}}
 
                         <div id="sample1" class="collapse">
                             <p class="text-center">
-                              Using the if statement and the nature of Processing, the canvas
-                              will be filled up with random colored circles
+                                Using the if statement and the nature of Processing, the canvas will be filled up with
+                                random colored circles
                             </p>
                         </div>
                     </div>
-            <!--        <img class="img-responsive center-block"  src="http://placehold.it/600x400" />
+                    <!--        <img class="img-responsive center-block"  src="http://placehold.it/600x400" />
                     -->
                 </div>
-                <div class = "col-md-4 home-image">
+                <div class="col-md-4 home-image">
                     <div class="sample-explanation">
-                        <h4 class="text-center" data-toggle="collapse" data-target="#sample2"><a class="sample-link" href="javascript: void(0)">Click inside the Box, wala!</a></h4>
+                        <h4 class="text-center" data-toggle="collapse" data-target="#sample2"><a class="sample-link"
+                                href="javascript: void(0)">Click
+                                inside the Box, wala!</a></h4>
 
                         {{> processingSketch2}}
 
                         <div id="sample2" class="collapse">
-                            <p class="text-center">Try to click inside the canvas above! Using an event handler, each time the user click somewhere on the canvas, a random color circle will be created at a random position on it.
+                            <p class="text-center">Try to click inside the canvas above! Using an event handler, each
+                                time
+                                the user click somewhere on the canvas, a random color circle will be created at a
+                                random
+                                position on it.
                             </p>
                         </div>
                     </div>
-            <!--        <img class="img-responsive center-block" src="http://placehold.it/600x400" />
+                    <!--        <img class="img-responsive center-block" src="http://placehold.it/600x400" />
                 -->
                 </div>
-                <div class = "col-md-4 home-image">
+                <div class="col-md-4 home-image">
                     <div class="sample-explanation">
-                        <h4 class="text-center" data-toggle="collapse" data-target="#sample3"><a class="sample-link" href="javascript: void(0)">Move Your Cursor inside the Box</a></h4>
+                        <h4 class="text-center" data-toggle="collapse" data-target="#sample3"><a class="sample-link"
+                                href="javascript: void(0)">Move
+                                Your Cursor inside the Box</a></h4>
 
                         {{> processingSketch3}}
 
                         <div id="sample3" class="collapse">
-                            <p class="text-center">Combination between moving cloud and an event handler. Try to put your mouse cursor on the right side to trigger the rain.
+                            <p class="text-center">Combination between moving cloud and an event handler. Try to put
+                                your
+                                mouse cursor on the right side to trigger the rain.
                             </p>
                         </div>
                     </div>
-                <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
+                    <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
                     -->
                 </div>
-          </div>
-            <div class="row home-image-section" >
-                <div class = "col-md-4 home-image">
+            </div>
+            <div class="row home-image-section">
+                <div class="col-md-4 home-image">
                     <div class="sample-explanation">
-                        <h4 class="text-center" data-toggle="collapse" data-target="#sample4"><a class="sample-link" href="javascript: void(0)">Up, Down, Up and Down</a></h4>
+                        <h4 class="text-center" data-toggle="collapse" data-target="#sample4"><a class="sample-link"
+                                href="javascript: void(0)">Up,
+                                Down, Up and Down</a></h4>
 
                         {{> processingSketch4}}
 
                         <div id="sample4" class="collapse">
-                            <p class="text-center">In processing you can manage the speed as well as direction where shapes move</p>
+                            <p class="text-center">In processing you can manage the speed as well as direction where
+                                shapes
+                                move
+                            </p>
                         </div>
                     </div>
-                <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
+                    <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
                     -->
                 </div>
-                <div class = "col-md-4 home-image">
+                <div class="col-md-4 home-image">
                     <div class="sample-explanation">
                         <h4 class="text-center" data-toggle="collapse" data-target="#sample5">
-                          <a class="sample-link" href="javascript: void(0)">Circling Movement</a></h4>
+                            <a class="sample-link" href="javascript: void(0)">Circling Movement</a></h4>
 
                         {{> processingSketch5}}
 
                         <div id="sample5" class="collapse">
                             <p class="text-center">
-                              We use the Processing special built in function called rotate which is useful for circling movement.
-                              You will learn functions too.
+                                We use the Processing special built in function called rotate which is useful for
+                                circling movement. You will learn functions
+                                too.
                             </p>
                         </div>
                     </div>
-                <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
+                    <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
                     -->
                 </div>
-                <div class = "col-md-4 home-image">
+                <div class="col-md-4 home-image">
                     <div class="sample-explanation">
                         <h4 class="text-center" data-toggle="collapse" data-target="#sample6">
-                          <a class="sample-link" href="javascript: void(0)">Hey It's Your Turn!</a></h4>
+                            <a class="sample-link" href="javascript: void(0)">Hey It's Your Turn!</a></h4>
 
                         {{> processingSketch6}}
 
                         <div id="sample6" class="collapse">
                             <p class="text-center">
-                              What are you waiting for? Learn Processing and build your own samples!
+                                What are you waiting for? Learn Processing and build your own samples!
                             </p>
                         </div>
                     </div>
-                <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
+                    <!--    <img class="img-responsive center-block" src="http://placehold.it/600x400" />
                     -->
                 </div>
-            </div>  <!-- END OF ROW -->
-            </div>  <!-- END OF CONTAINER -->
-        </div> <!-- END OF CONT FLUID -->
-<!--    </div> -->
-<script>
-//https://stackoverflow.com/questions/4249353/jquery-scroll-to-bottom-of-the-page
-  $('a#showSample').on('click', function(){
-      console.log('abucmeicj');
-      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-  });
-</script>
+            </div> <!-- END OF ROW -->
+        </div> <!-- END OF CONTAINER -->
+    </div> <!-- END OF CONT FLUID -->
+    <!--    </div> -->
+    <script>
+        //https://stackoverflow.com/questions/4249353/jquery-scroll-to-bottom-of-the-page
+        $('a#showSample').on('click', function () {
+            console.log('abucmeicj');
+            $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        });
+    </script>
 </template>
 
 <template name="processingSketch6">
-      <canvas style="margin: 0 auto;" id="canvas6" class="img-responsive"></canvas>
+    <canvas style="margin: 0 auto;" id="canvas6" class="img-responsive"></canvas>
     <script id="script6" type="text/javascript">
 
-// Simple way to attach js code to the canvas is by using a function
-function sketchProc(processing) {
-// THIS IS FOR THE CANVAS SIZE
- processing.setup = function() {
-    processing.size(600, 400);
-     //processing.size(330, 220);
-  };
+        // Simple way to attach js code to the canvas is by using a function
+        function sketchProc(processing) {
+            // THIS IS FOR THE CANVAS SIZE
+            processing.setup = function () {
+                processing.size(600, 400);
+                //processing.size(330, 220);
+            };
 
-}
-var canvas = document.getElementById("canvas6");
-// attaching the sketchProc function to the canvas
-var p = new Processing(canvas, sketchProc);
+        }
+        var canvas = document.getElementById("canvas6");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
 // p.exit(); to detach it
-</script>
+    </script>
 </template>
 
 <template name="processingSketch5">
-      <canvas style="margin: 0 auto;" id="canvas5" class="img-responsive"></canvas>
+    <canvas style="margin: 0 auto;" id="canvas5" class="img-responsive"></canvas>
     <script id="script5" type="text/javascript">
-// IMPORTANT NOTE
-      // The mouseX mouseY of the processing program won't be as accurate due to the effect of the img-responsive class for screen responsivity
+        // IMPORTANT NOTE
+        // The mouseX mouseY of the processing program won't be as accurate due to the effect of the img-responsive class for screen responsivity
 
-// Simple way to attach js code to the canvas is by using a function
-function sketchProc(processing) {
-  // Override draw function, by default it will be called 60 times per second
-    var angle = 0;
-    //var r = 50;
-    var bg = 255;
-// THIS IS FOR THE CANVAS SIZE
- processing.setup = function() {
-    processing.size(600, 400);
-     //processing.size(330, 220);
-  };
+        // Simple way to attach js code to the canvas is by using a function
+        function sketchProc(processing) {
+            // Override draw function, by default it will be called 60 times per second
+            var angle = 0;
+            //var r = 50;
+            var bg = 255;
+            // THIS IS FOR THE CANVAS SIZE
+            processing.setup = function () {
+                processing.size(600, 400);
+                //processing.size(330, 220);
+            };
 
- processing.draw = function() {
-    // keep the background
-    processing.background(bg, 150, 150 - bg);
-    if(bg > 0 ){
-      bg--;
-    }else{
-      bg = 360;
-    }
-    processing.fill(255);
+            processing.draw = function () {
+                // keep the background
+                processing.background(bg, 150, 150 - bg);
+                if (bg > 0) {
+                    bg--;
+                } else {
+                    bg = 360;
+                }
+                processing.fill(255);
 
-    processing.ellipse(processing.width/2, processing.height/2, 150 , 150);
+                processing.ellipse(processing.width / 2, processing.height / 2, 150, 150);
 
-    processing.pushMatrix();
-    processing.translate(processing.width/2, processing.height/2);
-    processing.rotate(processing.radians(angle));
-    //processing.ellipse(0, 0, 150 , 150);
-    processing.ellipse(100, 100, 50 , 50);
+                processing.pushMatrix();
+                processing.translate(processing.width / 2, processing.height / 2);
+                processing.rotate(processing.radians(angle));
+                //processing.ellipse(0, 0, 150 , 150);
+                processing.ellipse(100, 100, 50, 50);
 
-    processing.fill(25);
-    processing.ellipse(100, 100, 20 , 20);
-    angle++;
-    processing.popMatrix();
+                processing.fill(25);
+                processing.ellipse(100, 100, 20, 20);
+                angle++;
+                processing.popMatrix();
 
-  };
+            };
 
-}
-var canvas = document.getElementById("canvas5");
-// attaching the sketchProc function to the canvas
-var p = new Processing(canvas, sketchProc);
+        }
+        var canvas = document.getElementById("canvas5");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
 // p.exit(); to detach it
-</script>
+    </script>
 </template>
 
 <template name="processingSketch4">
-      <canvas style="margin: 0 auto;" id="canvas4" class="img-responsive"></canvas>
+    <canvas style="margin: 0 auto;" id="canvas4" class="img-responsive"></canvas>
     <script id="script4" type="text/javascript">
-// IMPORTANT NOTE
-      // The mouseX mouseY of the processing program won't be as accurate due to the effect of the img-responsive class for screen responsivity
+        // IMPORTANT NOTE
+        // The mouseX mouseY of the processing program won't be as accurate due to the effect of the img-responsive class for screen responsivity
 
-// Simple way to attach js code to the canvas is by using a function
-function sketchProc(processing) {
-  // Override draw function, by default it will be called 60 times per second
-    var xball1 = 100;
-    var yball1 = 50;
-    var xball2 = 300;
-    var yball2 = 350;
-    var xball3 = 500;
-    var yball3 = 200;
-    var spd = 1;
-// THIS IS FOR THE CANVAS SIZE
- processing.setup = function() {
-    processing.size(600, 400);
-     //processing.size(330, 220);
-  };
+        // Simple way to attach js code to the canvas is by using a function
+        function sketchProc(processing) {
+            // Override draw function, by default it will be called 60 times per second
+            var xball1 = 100;
+            var yball1 = 50;
+            var xball2 = 300;
+            var yball2 = 350;
+            var xball3 = 500;
+            var yball3 = 200;
+            var spd = 1;
+            // THIS IS FOR THE CANVAS SIZE
+            processing.setup = function () {
+                processing.size(600, 400);
+                //processing.size(330, 220);
+            };
 
- processing.draw = function() {
-    // keep the background
-    processing.background(224);
-    processing.line(processing.width/3+1, 0, processing.width/3+1, processing.height);
-    processing.line(processing.width/3*2, 0, processing.width/3*2, processing.height);
+            processing.draw = function () {
+                // keep the background
+                processing.background(224);
+                processing.line(processing.width / 3 + 1, 0, processing.width / 3 + 1, processing.height);
+                processing.line(processing.width / 3 * 2, 0, processing.width / 3 * 2, processing.height);
 
-    processing.ellipse(xball1, yball1, 50, 50);
-    processing.ellipse(xball2, yball2, 50, 50);
-    processing.ellipse(xball3, yball3, 100, 100);
-    if(yball1>processing.height + 25){
-      yball1= -25;
-    } else{
-      yball1++;
-    }
-    if(yball2< -25){
-      yball2 = processing.height + 25;
-    } else{
-      yball2-=2;
-    }
+                processing.ellipse(xball1, yball1, 50, 50);
+                processing.ellipse(xball2, yball2, 50, 50);
+                processing.ellipse(xball3, yball3, 100, 100);
+                if (yball1 > processing.height + 25) {
+                    yball1 = -25;
+                } else {
+                    yball1++;
+                }
+                if (yball2 < -25) {
+                    yball2 = processing.height + 25;
+                } else {
+                    yball2 -= 2;
+                }
 
-    if((yball3 === processing.height-50) || (yball3 === 50)){
-      spd = spd * -1;
-    }
-      yball3+=spd;
-  };
+                if ((yball3 === processing.height - 50) || (yball3 === 50)) {
+                    spd = spd * -1;
+                }
+                yball3 += spd;
+            };
 
-}
-var canvas = document.getElementById("canvas4");
-// attaching the sketchProc function to the canvas
-var p = new Processing(canvas, sketchProc);
+        }
+        var canvas = document.getElementById("canvas4");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
 // p.exit(); to detach it
-</script>
+    </script>
 </template>
 
 <template name="processingSketch3">
-      <canvas style="margin: 0 auto;" id="canvas3" class="img-responsive"></canvas>
+    <canvas style="margin: 0 auto;" id="canvas3" class="img-responsive"></canvas>
     <script id="script1" type="text/javascript">
-// IMPORTANT NOTE
-      // The mouseX mouseY of the processing program won't be as accurate due to the effect of the img-responsive class for screen responsivity
+        // IMPORTANT NOTE
+        // The mouseX mouseY of the processing program won't be as accurate due to the effect of the img-responsive class for screen responsivity
 
-// Simple way to attach js code to the canvas is by using a function
-function sketchProc(processing) {
-  // Override draw function, by default it will be called 60 times per second
-    var xcloud = 50;
-    var ycloud = 100;
-// THIS IS FOR THE CANVAS SIZE
- processing.setup = function() {
-    processing.size(600, 400);
-     //processing.size(330, 220);
-  };
+        // Simple way to attach js code to the canvas is by using a function
+        function sketchProc(processing) {
+            // Override draw function, by default it will be called 60 times per second
+            var xcloud = 50;
+            var ycloud = 100;
+            // THIS IS FOR THE CANVAS SIZE
+            processing.setup = function () {
+                processing.size(600, 400);
+                //processing.size(330, 220);
+            };
 
- processing.draw = function() {
-    // keep the background
-    processing.background(224);
-    // processing.line(processing.width/2, 0, processing.width/2, processing.height);
-     if((processing.mouseX > 0 && processing.mouseX < processing.width/2) && (processing.mouseY > 0 && processing.mouseY < processing.height)){
-        //processing.background(150, 200, 0);
-        processing.stroke(1);
-        var rainx = processing.random(processing.width);
-        var rainy = processing.random(processing.height);
-        processing.strokeWeight(5);
-        processing.line(rainx, rainy, rainx+3, rainy+3);
-
-
-        var rainx2 = processing.random(processing.width);
-        var rainy2 = processing.random(processing.height);
-        processing.strokeWeight(5);
-        processing.line(rainx2, rainy2, rainx2+3, rainy2+3);
-    }
-    processing.noStroke();
-    processing.fill(255);
-    processing.ellipse(xcloud, ycloud, 50, 50);
-    processing.ellipse(xcloud + 25, ycloud,50,50);
-    processing.ellipse(xcloud + 50, ycloud,50,50);
-    if(xcloud < processing.width){
-     xcloud++;
-    }else{
-     xcloud = -75;
-    }
+            processing.draw = function () {
+                // keep the background
+                processing.background(224);
+                // processing.line(processing.width/2, 0, processing.width/2, processing.height);
+                if ((processing.mouseX > 0 && processing.mouseX < processing.width / 2) && (processing.mouseY > 0 && processing.mouseY < processing.height)) {
+                    //processing.background(150, 200, 0);
+                    processing.stroke(1);
+                    var rainx = processing.random(processing.width);
+                    var rainy = processing.random(processing.height);
+                    processing.strokeWeight(5);
+                    processing.line(rainx, rainy, rainx + 3, rainy + 3);
 
 
-  };
+                    var rainx2 = processing.random(processing.width);
+                    var rainy2 = processing.random(processing.height);
+                    processing.strokeWeight(5);
+                    processing.line(rainx2, rainy2, rainx2 + 3, rainy2 + 3);
+                }
+                processing.noStroke();
+                processing.fill(255);
+                processing.ellipse(xcloud, ycloud, 50, 50);
+                processing.ellipse(xcloud + 25, ycloud, 50, 50);
+                processing.ellipse(xcloud + 50, ycloud, 50, 50);
+                if (xcloud < processing.width) {
+                    xcloud++;
+                } else {
+                    xcloud = -75;
+                }
 
-}
-var canvas = document.getElementById("canvas3");
-// attaching the sketchProc function to the canvas
-var p = new Processing(canvas, sketchProc);
+
+            };
+
+        }
+        var canvas = document.getElementById("canvas3");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
 // p.exit(); to detach it
-</script>
+    </script>
 </template>
 
 
 <template name="processingSketch2">
 
-      <canvas style="margin:0 auto;" id="canvas2" class="img-responsive"></canvas>
+    <canvas style="margin:0 auto;" id="canvas2" class="img-responsive"></canvas>
 
     <script id="script2" type="text/javascript">
-// Simple way to attach js code to the canvas is by using a function
-function sketchProc(processing) {
-  // Override draw function, by default it will be called 60 times per second
-    processing.setup = function() {
-      processing.size(600, 400);   // THIS IS FOR THE CANVAS SIZE
-      processing.background(processing.random(255),processing.random(255),processing.random(255));
-    };
+        // Simple way to attach js code to the canvas is by using a function
+        function sketchProc(processing) {
+            // Override draw function, by default it will be called 60 times per second
+            processing.setup = function () {
+                processing.size(600, 400);   // THIS IS FOR THE CANVAS SIZE
+                processing.background(processing.random(255), processing.random(255), processing.random(255));
+            };
 
-    processing.draw = function() {
-    };
+            processing.draw = function () {
+            };
 
-    processing.mouseClicked = function(){
-      processing.fill(processing.random(255),processing.random(255),processing.random(255));
-      processing.ellipse(processing.random(processing.width), processing.random(processing.height),50,50);
-    }
-}
-var canvas = document.getElementById("canvas2");
-// attaching the sketchProc function to the canvas
-var p = new Processing(canvas, sketchProc);
+            processing.mouseClicked = function () {
+                processing.fill(processing.random(255), processing.random(255), processing.random(255));
+                processing.ellipse(processing.random(processing.width), processing.random(processing.height), 50, 50);
+            }
+        }
+        var canvas = document.getElementById("canvas2");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
 // p.exit(); to detach it
-</script>
+    </script>
 </template>
 
 <template name="processingSketch1">
     <center>
-    <canvas style="margin:0 auto;" id="canvas1" class="img-responsive"></canvas>
+        <canvas style="margin:0 auto;" id="canvas1" class="img-responsive"></canvas>
     </center>
     <script id="script1" type="text/javascript">
 
-// Simple way to attach js code to the canvas is by using a function
-function sketchProc(processing) {
-  // Override draw function, by default it will be called 60 times per second
-    var xdraw = 25, ydraw = 25;
-// THIS IS FOR THE CANVAS SIZE
- processing.setup = function() {
-    processing.size(600, 400);
-     //processing.size(330, 220);
-     processing.frameRate(15);
-  };
+        // Simple way to attach js code to the canvas is by using a function
+        function sketchProc(processing) {
+            // Override draw function, by default it will be called 60 times per second
+            var xdraw = 25, ydraw = 25;
+            // THIS IS FOR THE CANVAS SIZE
+            processing.setup = function () {
+                processing.size(600, 400);
+                //processing.size(330, 220);
+                processing.frameRate(15);
+            };
 
- processing.draw = function() {
-    // determine center and max clock arm length
-    if(xdraw < processing.width){
-        processing.fill(processing.random(255), processing.random(255), processing.random(255));
-        processing.ellipse(xdraw,ydraw,50,50);
-        xdraw+=50;
-    }else if(ydraw < processing.height){
-        ydraw+=50;
-        xdraw=25;
-    }
-    // erase background
-    //processing.background(224);
-  };
-}
-var canvas = document.getElementById("canvas1");
-// attaching the sketchProc function to the canvas
-var p = new Processing(canvas, sketchProc);
+            processing.draw = function () {
+                // determine center and max clock arm length
+                if (xdraw < processing.width) {
+                    processing.fill(processing.random(255), processing.random(255), processing.random(255));
+                    processing.ellipse(xdraw, ydraw, 50, 50);
+                    xdraw += 50;
+                } else if (ydraw < processing.height) {
+                    ydraw += 50;
+                    xdraw = 25;
+                }
+                // erase background
+                //processing.background(224);
+            };
+        }
+        var canvas = document.getElementById("canvas1");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
 // p.exit(); to detach it
-</script>
+    </script>
 
 </template>
