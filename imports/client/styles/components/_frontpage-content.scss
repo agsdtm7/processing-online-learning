@@ -46,13 +46,18 @@
 
 
 .main-title{
+  width: 100%;
   padding-top: 5rem;
+  padding-bottom: 3rem;
   color:white;
+  background-color: rgba(20, 20, 20, 0.15);
+  border-radius: 20px;
 }
 
 #processingTitle{
   color:$brand-processing-color;
 }
+
 
 .home-banner{
   
